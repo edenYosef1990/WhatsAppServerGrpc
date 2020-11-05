@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option csharp_namespace = "WhatsAppServerGrpc.Protos";
+
+service WhatsAppMsgService {
+	rpc SendInitMessage(InitialMessage) returns (stream ReadingMessage);
+}
+
+message ReadingMessage{
+	string text = 1;
+}
+
+message InitialMessage {
+
+}

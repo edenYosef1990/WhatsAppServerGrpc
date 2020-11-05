@@ -7,7 +7,7 @@ using WhatsAppServerGrpc.Protos;
 
 namespace WhatsAppServerGrpc.WhatsappService
 {
-    public class WhatsappService : WhatsAppMsgService.WhatsAppMsgServiceBase
+    public class WhatsappServerService : WhatsAppMsgService.WhatsAppMsgServiceBase
     {
         public override async Task SendInitMessage(InitialMessage request, IServerStreamWriter<ReadingMessage> responseStream, ServerCallContext context)
         {
